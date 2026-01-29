@@ -16,6 +16,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class PlayerEntityMixin {
     @Inject(at = @At("HEAD"), method = "onDeath")
     private void init(CallbackInfo ci) {
+        System.out.println("CRASH");
+
         IntByReference previous = new IntByReference();
         IntByReference response = new IntByReference();
 
