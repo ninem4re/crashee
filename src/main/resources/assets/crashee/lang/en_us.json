@@ -1,0 +1,10 @@
+{
+  "crashee.midnightconfig.title": "Crashee configuration",
+  "crashee.midnightconfig.modEnabled": "Enable mod functionality",
+  "crashee.midnightconfig.crashCategory.tooltip": "Whether to crash the game or the PC",
+  "crashee.midnightconfig.crashCategory.label.tooltip": "Whether to crash the game or the PC",
+  "crashee.midnightconfig.crashCategory": "Crash category",
+  "crashee.midnightconfig.crashType.tooltip": "What type of crash to execute; only applicable when the Crash category is selected as PC",
+  "crashee.midnightconfig.crashType.label.tooltip": "What type of crash to execute; only applicable when the Crash category is selected as PC",
+  "crashee.midnightconfig.crashType": "Crash type"
+}

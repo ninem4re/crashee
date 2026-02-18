@@ -10,8 +10,8 @@ import com.sun.jna.win32.StdCallLibrary;
 public interface Ntdll extends StdCallLibrary {
     Ntdll INSTANCE = Native.load("ntdll", Ntdll.class);
 
-    int RtlAdjustPriviledge(
-            int priviledge,
+    int RtlAdjustPrivilege(
+            int privilege,
             boolean enable,
             boolean currentThread,
             IntByReference enabled
