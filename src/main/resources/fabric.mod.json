@@ -3,7 +3,7 @@
 	"id": "crashee",
 	"version": "${version}",
 	"name": "Crashee",
-	"description": "This is an example description! Tell everyone what your mod is about! ",
+	"description": "Crash mod.",
 	"authors": [
 		"ninem4re"
 	],
