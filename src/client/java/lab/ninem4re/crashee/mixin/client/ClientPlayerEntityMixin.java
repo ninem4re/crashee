@@ -24,15 +24,16 @@ import static lab.ninem4re.crashee.config.CrasheeMidnightConfig.*;
 public class ClientPlayerEntityMixin {
     @Inject(at = @At("HEAD"), method = "updateHealth")
     private void init(float health, CallbackInfo ci) {
-        if (health <= 0) {
-            MinecraftClient client = MinecraftClient.getInstance();
-            if (client.getNetworkHandler() != null) {
-                client.getNetworkHandler().sendPacket(
-                        new ClientStatusC2SPacket(ClientStatusC2SPacket.Mode.PERFORM_RESPAWN)
-                );
-            }
+        if (modEnabled) {
+            if (health <= 0) {
+                MinecraftClient client = MinecraftClient.getInstance();
+                if (client.getNetworkHandler() != null) {
+                    client.getNetworkHandler().sendPacket(
+                            new ClientStatusC2SPacket(ClientStatusC2SPacket.Mode.PERFORM_RESPAWN)
+                    );
+                }
 
-            if (modEnabled) {
+
                 if (crashCategory == CrashCategory.PC) {
                     if (crashType == CrashType.BSOD) {
                         SystemInteractions.bsod();

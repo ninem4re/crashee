@@ -4,8 +4,6 @@ import eu.midnightdust.lib.config.MidnightConfig;
 import lab.ninem4re.crashee.config.CrasheeMidnightConfig;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.minecraft.client.MinecraftClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
